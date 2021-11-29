@@ -1,0 +1,477 @@
+@import url('https://fonts.googleapis.com/css2?family=Marvel&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    background-color:black;
+    font-family: 'Marvel', sans-serif;
+}
+
+.banner{
+    height:90vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+}
+.index{
+    color:white;
+    height: 30px;
+    width: 13vh;
+    font-size: 25px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+    border-radius: 30px;
+    animation: cambioDeColor1 3s infinite;
+}
+
+@keyframes cambioDeColor1 {
+    0%{
+        background-color: rgb(200, 204, 211);
+    }
+25%{
+    background-color: rgba(79, 82, 69, 0.938);
+}
+50%{
+    background-color: rgb(223, 187, 68);
+}
+75%{
+    background-color: rgb(39, 44, 44);
+}
+
+100%{
+    background-color: rgb(235, 238, 222);}
+}
+
+.menuPrincipal{
+    background: linear-gradient( 290deg, #000000, #494b4e);
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    width: 100%;;
+}
+.menuPrincipal a{
+    color:goldenrod;
+    text-decoration: none;
+    font-style: oblique;
+}
+.menuPrincipal a:hover{
+    background: linear-gradient(
+        286deg, rgb(229 189 8), rgb(73, 75, 78));
+    color:white;
+}
+.menuPrincipal li{
+    display:block;
+    padding: 30px 20px;
+    text-decoration: none;
+    font-size: 25px;
+    flex-grow: 1;
+    text-align: center;
+   
+}
+.menuPrincipal ul{
+    position:absolute;
+    display: none;
+}
+.menuPrincipal ul li{
+    display: block;
+    color:gold;
+    background: linear-gradient( 290deg, #000000, #494b4e);
+    padding: 10px;
+    
+}
+.menuPrincipal li:hover ul{
+    display: block;
+   
+}
+.mainPrincipal{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-content: center;
+    margin: 20px;
+    padding: 20px;
+
+}
+.respmenu a {
+    color: inherit;
+    text-decoration: none;
+    display: block;
+    padding: 10px 20px;
+    border-bottom: 2px solid #484b4e;
+    max-width: 200px;
+    background: #4e5153;
+    font-variant: small-caps;
+    text-shadow: 1px 1px black;
+  }
+  .respmenu a:hover{
+    cursor:pointer;
+    background:rgb(0,0,0,0.3);
+  }
+ 
+.respmenu input[type="checkbox"], .respmenu .fa-bars, .respmenu .fa-times {
+    position: absolute;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    right: 0;
+    top: 0;
+    width: 48px;
+    height: 48px;
+    
+  }
+  .respmenu input[type="checkbox"], .respmenu .fa-bars, .respmenu .fa-times:hover{
+    cursor:pointer;
+    background:rgb(0,0,0,0.3);
+  }
+  
+  .respmenu .fa-bars, .respmenu .fa-times {
+    font-size: 48px;
+    pointer-events: none;
+  }
+  
+  .respmenu input[type="checkbox"] {
+    opacity: 0;
+  }
+  
+  .respmenu {
+    color:gold;
+    position: relative;
+    background: #37393b;
+    min-height: 48px;
+    display: none;
+  }
+  
+  
+  .respmenu nav {
+    display: none;
+  }
+  
+  .respmenu input:checked ~ nav {
+    display: block;
+  }
+  
+  .respmenu input:checked ~ .fa-bars {
+    display: none;
+  }
+  
+  .respmenu input:not(:checked) ~ .fa-times {
+    display: none;
+  }
+
+
+a{
+    color:goldenrod;
+    text-decoration: none;
+}
+.informacionPagina{
+    color:white;
+    font-size: 40px;
+    margin: 20px;
+    padding: 30px;
+    display:flex;
+    text-align: center;
+    flex-direction: column;
+    animation: cambioDeColor 3s infinite;}
+    
+    @keyframes cambioDeColor {
+        0%{
+            color: rgb(200, 204, 211);
+        }
+    25%{
+            color: rgba(24, 214, 34, 0.938);
+    }
+    50%{
+            color:goldenrod;
+    }
+    
+    100%{
+            color:grey;
+    }
+    
+}
+.opcionesPagina{
+    color:goldenrod;
+    letter-spacing: 1px;
+    font-size: 25px;
+    line-height: 15px;
+    padding: 10px;
+    margin: 5px;
+}
+.imagenmain{
+    height: 250px;
+    width: 250px;
+}
+.imagenmain:hover{
+    transform: translate(7px,5px);
+}
+
+.tabla{
+    color:goldenrod;
+    color:white;
+    width: 70vh;
+    margin: 10px;
+
+}
+p{
+    color:white;
+}
+input{
+    background-color:goldenrod;
+    color:white;
+}
+select{
+    background-color:goldenrod;
+    color:white;
+}
+.cuadradoTexto{
+    background-color: goldenrod;
+    color:white;
+    width:400px;
+    
+}
+.cartaMenu{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+}
+.carta{
+    height: 500px;
+    padding: 10px;
+    margin: 5px;
+}
+
+.reserva{
+    color:white;
+}
+.reservaMenu{
+    display: flex;
+    flex-direction: column;
+    align-content:center;
+    align-items: center;
+}
+h4{
+    color:white;
+    font-size: 25px;
+    font-weight: 900;
+}
+#carouselExampleCaptions{
+    width: 180vh;
+    padding: 30px;
+}
+.reserva{
+    padding: 20px;
+}
+.imagenReserva{
+    height: 300px;
+    width: 400px;
+    padding: 10px;
+    margin: 5px;
+}
+.galeriaMenu{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    padding: 30px;
+}
+.galeria{
+    height: 450px;
+    width: 400px;
+    padding: 10px;
+    margin: 5px;
+}
+.galeria:hover{
+    transform: translate(5px,5px);
+}
+
+.mapa{
+    display: flex;
+    justify-content:center;
+    padding: 40px;
+}
+
+footer{
+    background-color: #494b4e;
+    padding: 30px;
+    width: 100%;
+}
+.redes{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    width:100%
+
+
+}
+.redes .instagram :hover{
+    background:black;
+    color:violet;
+    border-radius: 30px;
+}
+.redes .facebook :hover{
+    background:white;
+    color:blue;
+    border-radius: 30px;
+}
+.redes .twitter :hover{
+    background:black;
+    color:deepskyblue;
+    border-radius: 30px;
+}
+.instagram{
+    border-radius: 10px;
+    border:none;
+    cursor: pointer;
+    font-size: 50px; 
+    background-color: #494b4e;
+    color:gold;
+}
+
+.facebook{
+    border-radius: 10px;
+    border:none;
+    cursor: pointer;
+    font-size: 50px;
+    background-color:#494b4e;
+    color:gold;
+}
+.twitter{
+    border-radius: 10px;
+    border:none;
+    cursor: pointer;
+    font-size: 50px;
+    background-color:#494b4e;
+    color:gold;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "carta1 carta1 carta2 carta2";
+    width: 90%;
+    
+  }
+  
+  .carta1 { grid-area: carta1; }
+  
+  .carta2 { grid-area: carta2; }
+  
+  
+  @media (max-width: 768px) {
+	.banner{
+        width: 100%;
+    }
+    .footer{
+        width: 100%;
+    }
+    .menuPrincipal{
+        display: flex;
+        flex-direction:column;
+    }
+    .menuPrincipal ul li{
+        display: none;
+    }
+    .index{
+        display: none;
+    }
+    .respmenu{
+        display: block;
+        color:gold;
+    
+    }
+    .mainPrincipal{
+        display: flex;
+        flex-direction:column;}
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items:flex-start;}
+    .informacionPagina{
+        width: 100%;
+    }
+    .galeriaMenu{
+        display:flex;
+        flex-direction: column;
+        }
+        .galeria{
+            width: 100%;
+        }
+        #carouselExampleCaptions{
+            width: 100%;
+        }
+    
+    }
+  
+
+    @media(max-width: 480px) {
+        .banner{
+            width:100%;
+        }
+        .footer{
+            width: 100%;
+        }
+        .menuPrincipal{
+            display: flex;
+            flex-direction:column;
+        }
+        .menuPrincipal ul li{
+            display: none;
+            }
+        .index{
+            display: none;
+        }
+        .respmenu{
+            display: block;
+            color:gold;
+            text-decoration: none;
+            }
+        .mainPrincipal{
+            display: flex;
+            flex-direction:column;}
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            }
+        .carta{
+            height: 500px;
+        }
+    
+        #carouselExampleCaptions{
+            width: 100%;
+            }
+
+        .informacionPagina{
+            width: 80%;
+            display: flex;
+            align-items: center;
+            }  
+        .galeriaMenu{
+            display:flex;
+            flex-direction: column;
+                }
+        .galeria{
+            width: 90%;
+                }
+            }

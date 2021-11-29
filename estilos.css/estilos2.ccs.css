@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient( 290deg, #000000, #494b4e);
+}
+.banner{
+    height:80vh;
+    width: 210vh;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content:flex-start;
+    margin: 20px;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    color:white;
+    margin: 20px;
+}
+.index{
+    border-style:double;
+    border-color: gold;
+    height: 30px;
+    width: 13vh;
+    display: flex;
+    justify-content: center;
+    animation: cambioDeColor 3s infinite;
+}
+.acord{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: end;
+    align-content: flex-start;
+    margin: 20px;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 50px
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.accordion-item {
+    background: linear-gradient( 
+        25deg
+         , rgb(93 90 90), rgb(73, 74, 82));
+}
+
+.accordion-button{
+    background: linear-gradient( 
+        25deg
+         , rgb(93 90 90), rgb(73, 74, 82));
+         color:white
+}
+.carouseltodos{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;}
+
+.reserva{
+    color:whitesmoke;
+    display: flex;
+    justify-content: center;
+}
+#carouselExampleControls{
+    width: 150vh;
+    border: black;
+    border-style: solid;
+}
+
+#carouselExampleIndicators{
+    width: 150vh;
+    border: black;
+    border-style: solid;
+   ;
+}
+#carouselExampleCaptions{
+    width: 150vh;
+    border: black;
+    border-style: solid;
+    
+}
+
+.carousel-control-prev{
+    color:black
+}
+
+.carousel-control-next{
+    color:burlywood
+}
